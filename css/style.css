@@ -114,9 +114,16 @@ body{
 	padding: 15px 0 0;
 	background: url(../img/balun.png) no-repeat 193px top;
 	color: #cb634b;
-	text-decoration: underline;
 	cursor: pointer;
 }
+.header .hd .adress .shema a{
+    text-decoration: underline;
+    color: inherit;
+}
+.header .hd .adress .shema a:hover{
+    text-decoration: none;
+}
+
 .header .hd .tels{
 	width: 265px;
 	float: right;
@@ -185,6 +192,15 @@ body{
     border-radius: 5px;
     behavior: url(border-radius.php);
 }
+
+.header .right .button a{
+    color: inherit;
+    text-decoration:none;
+}
+
+.header .right .button a:hover{
+    text-decoration: underline;
+}
 .header .about .work{
 }
 .header .about .work .ttl{
@@ -231,11 +247,12 @@ body{
 }
 .questions{
 	margin: 0 auto;
-	max-width: 62.5em;
+	max-width: 53.5em;
 	padding: 28px 0 0;
 }
-.questions .question{
-	max-width: 56.25em;
+
+#accordion h3{
+	max-width: 51.25em;
 	margin: 0 auto 7px;
 	border: 1px solid #979696;
 	-moz-border-radius: 5px;
@@ -246,8 +263,15 @@ body{
 	background: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 47%, #d4d4d4 53%, #d4d4d4 100%);
 	background: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 47%,#d4d4d4 53%,#d4d4d4 100%);
 	background: linear-gradient(to bottom,  #eeeeee 0%,#eeeeee 47%,#d4d4d4 53%,#d4d4d4 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#d4d4d4',GradientType=0 );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#d4d4d4',GradientType=0 );
 	cursor: pointer;
+        color: #da6950;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: "Times New Roman", Georgia, Times, serif;
+}
+#accordion h3 b {
+    color: #000000;
 }
 .questions .question .q{
 	min-height:0.9em;
@@ -518,7 +542,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
 }
 .uspeh .uspehin .item{
 	width: 16.6%;
-	margin: 0 3.3%;
+	//margin: 0 3.3%;
 	display: inline-block;
 	display: -moz-inline-stack;
 	vertical-align: top;
@@ -541,7 +565,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
 	font-family: "Times New Roman", Georgia, Times, serif;
 	font-size: 17px;
 	line-height: 20px;
+        max-width: 150px;
+        margin-left: 18%;
 }
+
 .find{
 	width: 90%;
 	margin: 0 auto;
@@ -588,14 +615,118 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
 	padding: 0 0 15px 15.7%;
 }
 .find .map{
-}
-.find .map img{
-	width:100%;
-	height:auto;
+    	border: 4px solid #c3725f;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
 }
 .clear{
 	clear:both;
 }
+
+
+/*стили формы обратной связи*/
+#callback{
+    width: 750px;
+    height: 400px;
+    background: #f9f9f9;
+}
+
+#callback .body{
+    border: 10px solid #200b08;
+    height: 380px;
+
+}
+
+#callback .body h2{
+    padding-left: 50px;
+    font-size: 30px;
+    font-family:Georgia, sans-serif;
+    color: #000000;
+    margin-top: 30px;
+    line-height:1em;
+}
+
+#callback .body h3{
+    padding-left: 50px;
+    font-size: 18px;
+    font-family:Georgia, sans-serif;
+    color: #000;
+    font-style:italic;
+    font-weight:normal;
+}
+
+#callback #form5{
+    height: 150px;
+    padding-left: 15px;
+    width: 470px;
+    margin-top: 30px;
+}
+#callback #form5 span{
+    position:absolute;
+    font-size:18px;
+    color:#494949;
+    font-family:Georgia, sans-serif;
+    font-style:italic;
+}
+
+#callback #form5 input{
+    display: block;
+    height: 40px;
+    width: 340px;
+    margin-left: 37px;
+}
+
+#callback #form5 input[type=text]{
+    font-size: 13px;
+    font-style: italic;
+    color: #525252;
+    border-radius: 4px; /* CSS3 */
+    border:1px solid #bcbcbc;
+    background:#dddddd;
+    padding-left:10px;
+    margin-bottom:30px;
+
+}
+
+#callback .paragraf{
+    margin-left: 92px;
+    margin-top: -65px;
+    font-size: 12px;
+    color: #242528;
+    padding-left: 15px;
+}
+
+.phone-btn{
+    margin-right:445px;
+
+}
+
+.call-back-phone-2{
+    width: 233px;
+    height: 33px;
+    background: url(../img/min-but.png) no-repeat;
+    float: right;
+    font-family:Georgia, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-top:5px;
+    font-size:22px;
+
+}
+
+.call-back-phone-2 p{
+    text-align:center;
+
+    margin-top: 3px;
+
+}
+.call-back-phone-2:hover{
+    text-decoration: underline;
+    background-position: bottom;
+}
+
 
 @media screen and (max-width: 1000px){ 
 .header .about{
