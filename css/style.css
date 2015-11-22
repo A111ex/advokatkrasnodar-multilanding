@@ -492,9 +492,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
 .reviews .review .descr .ttl{
 	margin: 0 0 3.1%;
 	width: 92%;
-	color:#df7860;
+	/*color:#df7860;*/
 	font-size: 18px;
 	line-height:18px;
+        font-weight: 500;
 }
 .reviews .review .descr .text{
 	font-size: 16px;

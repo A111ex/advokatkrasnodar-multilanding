@@ -1,7 +1,6 @@
 var metrika = '';
 $(function () {
     var telcheck = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/i;
-    //console.log(12345);
     $("a.fancybox").fancybox({});
     $(".fancy-form").fancybox({padding: 0});
 
@@ -54,23 +53,23 @@ $(function () {
         active: false
     });
 
-$('.slider1').bxSlider({
-    slideWidth: 225,
-    minSlides: 4,
-    maxSlides: 4,
-    onSliderLoad: function(){
-        $('.bx-controls').hide();
-    }
-  });
+    $('.slider1').bxSlider({
+        slideWidth: 225,
+        minSlides: 4,
+        maxSlides: 4,
+        onSliderLoad: function () {
+            $('.bx-controls').hide();
+        }
+    });
 
 
 
-$('.arl').click(function (){
-    $('.bx-prev').click();
-});
-$('.arr').click(function (){
-    $('.bx-next').click();
-});
+    $('.arl').click(function () {
+        $('.bx-prev').click();
+    });
+    $('.arr').click(function () {
+        $('.bx-next').click();
+    });
 
 });
 
