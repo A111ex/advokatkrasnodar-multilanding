@@ -341,13 +341,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
 	*display: inline;
 }
 .services .service .image{
-	max-width: 130px;
+	max-width: 209px;
 	margin: 0 auto 8px;
         
 }
 .services .service .image img{
 	width:100%;
-	max-width:209px;
+	max-width:130px;
 	height:auto;
 }
 .services .service .ttl{
