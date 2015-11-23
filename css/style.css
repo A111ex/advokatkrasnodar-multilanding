@@ -343,6 +343,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
 .services .service .image{
 	max-width: 130px;
 	margin: 0 auto 8px;
+        
 }
 .services .service .image img{
 	width:100%;
