@@ -74,7 +74,7 @@
                         <div class="button"><a href="#callback" class='fancy-form'>ОСТАВИТЬ ЗАЯВКУ</a></div>
                     </div>
                     <div class="clear"></div>
-                    <div class="title"><a name="slide-2">10 самых частых вопросов адвокату</a></div>
+                    <div class="title"><a name="slide-2">{$arResult.questions_title}</a></div>
                 </div>
             </div>
             <div class="content">

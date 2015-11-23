@@ -22,6 +22,7 @@ $arResult = array(
     'title' => "Юридическая помощь адвоката Епифановой <br><span>в Краснодаре</span>",
     'oneH' => "<div class='t1'>Консультация бесплатно</div>",
     'twoH' => "<div class='t2'>Оценка перспектив дела</div>",
+    'questions_title' => "10 самых частых вопросов адвокату",
     'questions' => array(
         1 => array(
             'question' => "Хочу подать в суд. С чего начать? ",
