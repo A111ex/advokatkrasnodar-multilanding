@@ -56,7 +56,7 @@
                         </div>
                         <div class="work">
                             <div class="ttl">Как мы работаем:</div>
-                            <div class="w w1">Как мы работаем:</div>
+                            <div class="w w1">Ваша заявка / звонок</div>
                             <div class="w w2">Консультация </div>
                             <div class="w w3">Наша работа</div>
                             <div class="w w4">Ваш успех</div>
@@ -74,7 +74,7 @@
                         <div class="button"><a href="#callback" class='fancy-form'>ОСТАВИТЬ ЗАЯВКУ</a></div>
                     </div>
                     <div class="clear"></div>
-                    <div class="title">10 самых частых вопросов адвокату по разделу имущества</div>
+                    <div class="title">10 самых частых вопросов адвокату</div>
                 </div>
             </div>
             <div class="content">

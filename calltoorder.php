@@ -21,8 +21,8 @@ if (isset($namecall) && isset($telcall)) {
         $telcall = "";
     }
 
-//    $mail = "MasterV12@ya.ru, vic@victorial.biz, advokatkrasnodar@yandex.ru";
-    $mail = "MasterV12@ya.ru";
+    $mail = "MasterV12@ya.ru, vic@victorial.biz, advokatkrasnodar@yandex.ru";
+//    $mail = "MasterV12@ya.ru";
 
     $title_mass = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=\"utf-8\"\r\n";
     $title_mass .= "From: info@advokatkrasnodar.com\r\n";

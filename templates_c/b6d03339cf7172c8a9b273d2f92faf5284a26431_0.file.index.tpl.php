@@ -1,16 +1,16 @@
-<?php /* Smarty version 3.1.28-dev/63, created on 2015-11-23 04:54:01
+<?php /* Smarty version 3.1.28-dev/63, created on 2015-11-23 15:46:02
          compiled from "X:\home\adv.ru\public_html\templates\index.tpl" */ ?>
 <?php
 $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/63',
-  'unifunc' => 'content_565239795ea039_30483473',
+  'unifunc' => 'content_5652d24a2adbe6_03830221',
   'file_dependency' => 
   array (
     'b6d03339cf7172c8a9b273d2f92faf5284a26431' => 
     array (
       0 => 'X:\\home\\adv.ru\\public_html\\templates\\index.tpl',
-      1 => 1448229236,
+      1 => 1448268360,
       2 => 'file',
     ),
   ),
@@ -18,8 +18,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
   ),
 ),false);
-if ($_valid && !is_callable('content_565239795ea039_30483473')) {
-function content_565239795ea039_30483473 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5652d24a2adbe6_03830221')) {
+function content_5652d24a2adbe6_03830221 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -93,7 +93,7 @@ function content_565239795ea039_30483473 ($_smarty_tpl) {
                         </div>
                         <div class="work">
                             <div class="ttl">Как мы работаем:</div>
-                            <div class="w w1">Как мы работаем:</div>
+                            <div class="w w1">Ваша заявка / звонок</div>
                             <div class="w w2">Консультация </div>
                             <div class="w w3">Наша работа</div>
                             <div class="w w4">Ваш успех</div>
@@ -114,7 +114,7 @@ function content_565239795ea039_30483473 ($_smarty_tpl) {
                         <div class="button"><a href="#callback" class='fancy-form'>ОСТАВИТЬ ЗАЯВКУ</a></div>
                     </div>
                     <div class="clear"></div>
-                    <div class="title">10 самых частых вопросов адвокату по разделу имущества</div>
+                    <div class="title">10 самых частых вопросов адвокату</div>
                 </div>
             </div>
             <div class="content">
