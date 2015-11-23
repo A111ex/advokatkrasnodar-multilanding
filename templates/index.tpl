@@ -283,7 +283,7 @@
                         <div class="title">Отзывы наших клиентов</div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r1.jpg" alt="Фото" />
+                                <div class="image"><img src="img/stor-l.jpg" alt="Фото" />
                                     <div class="name">Стороженко <br />33 года{*<br />Данные именены по просьбе клиента*}</div>
                                 </div>
                                 <div class="descr">
@@ -294,7 +294,7 @@
                         </div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r2.jpg" alt="Фото" />
+                                <div class="image"><img src="img/kosh-l.jpg" alt="Фото" />
                                     <div class="name">Кошевец Наталья Ивановна<br />47 лет</div>
                                 </div>
                                 <div class="descr">
@@ -306,7 +306,7 @@
                         </div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r3.jpg" alt="Фото" />
+                                <div class="image"><img src="img/knazeva-l.jpg" alt="Фото" />
                                     <div class="name">Людмила Князева<br /> 34 года</div>
                                 </div>
                                 <div class="descr">
