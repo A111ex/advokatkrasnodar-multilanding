@@ -33,7 +33,7 @@ $(function () {
                 dataType: "html",
                 success: function () {
                     //console.log(datalog);
-                    //yaCounter31269228.reachGoal(metrika);
+                    yaCounter31269228.reachGoal(metrika);
                     $.fancybox({'href': 'img/call-ok.png', 'autoDimensions': false, 'height': 'auto', padding: 0});
                 },
                 error: function () {
