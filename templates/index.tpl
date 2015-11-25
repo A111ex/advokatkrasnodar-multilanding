@@ -312,7 +312,7 @@
                                 <input  type="text" name="name" placeholder="имя"/> <span style="top:151px; left:426px;">Введите ваше имя</span>
                                 <input type="text" name="phone" class="phone" placeholder="телефон"/><span style="top:224px; left:426px;">Введите ваш номер телефона</span>
                             </form>
-                            <a href="#" class="callbutton call-back-phone-2 phone-btn">
+                            <a href="#" class="callbutton call-back-phone-2 phone-btn" onclick="metrika='meet_up';">
                                 <P>Заказать звонок</P>
                             </a> 
                         </div>
@@ -322,5 +322,34 @@
                         <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=eRBmQXm5cszE2igcx2IyrIzIJPTv9ELu&width=600&height=450"></script>
                     </div>
                 </div>
+				<!-- Yandex.Metrika counter -->
+				<script type="text/javascript">
+					(function (d, w, c) {
+						(w[c] = w[c] || []).push(function() {
+							try {
+								w.yaCounter31269228 = new Ya.Metrika({
+									id:31269228,
+									clickmap:true,
+									trackLinks:true,
+									accurateTrackBounce:true,
+									webvisor:true
+								});
+							} catch(e) { }
+						});
+
+						var n = d.getElementsByTagName("script")[0],
+							s = d.createElement("script"),
+							f = function () { n.parentNode.insertBefore(s, n); };
+						s.type = "text/javascript";
+						s.async = true;
+						s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+						if (w.opera == "[object Opera]") {
+							d.addEventListener("DOMContentLoaded", f, false);
+						} else { f(); }
+					})(document, window, "yandex_metrika_callbacks");
+				</script>
+				<noscript><div><img src="https://mc.yandex.ru/watch/31269228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+				<!-- /Yandex.Metrika counter -->
                 </body>
                 </html>
