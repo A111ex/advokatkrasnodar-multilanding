@@ -729,7 +729,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', end
     background-position: bottom;
 }
 
-.questions div p{text-indent: 2.5em; margin-top: 0;margin-bottom: 0px;}
+.questions div p{margin-bottom: 0px;}
+.questions div p+p{text-indent: 2.5em; margin-top: 0;margin-bottom: 0px;}
 
 
 
