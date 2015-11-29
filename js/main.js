@@ -10,6 +10,7 @@ $(function () {
 
 
     $('.callbutton').click(function () {
+        var title;
         var name_field = $(this).parent().find('[name="name"]');
         var phone_field = $(this).parent().find('[name="phone"]');
 
@@ -24,7 +25,8 @@ $(function () {
             $(phone_field).css({background: '#fec7c7'});
             return false;
         } else {
-            var dataform = {namecall: namecall, telcall: telcall, metrika: metrika};
+            title = $('.right .ttl').html();
+            var dataform = {namecall: namecall, telcall: telcall, metrika: metrika, title: title};
 
             $.ajax({
                 url: 'calltoorder.php',
