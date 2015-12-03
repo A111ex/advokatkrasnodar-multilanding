@@ -270,6 +270,29 @@ body{
         font-weight: 700;
         font-family: "Times New Roman", Georgia, Times, serif;
 }
+#accordion h3:hover{
+/*	max-width: 51.25em;
+	margin: 0 auto 7px;
+	border: 1px solid #979696;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;*/
+	background: #eeeeee;
+	background: -moz-linear-gradient(top,  #d4d4d4 0%, #d4d4d4 47%, #eeeeee 53%, #eeeeee 100%);
+	background: -webkit-linear-gradient(top,  #d4d4d4 0%,#d4d4d4 47%,#d4d4d4 53%,#d4d4d4 100%);
+	background: linear-gradient(to bottom,  #d4d4d4 0%,#d4d4d4 47%,#eeeeee 53%,#eeeeee 100%);
+        border: 1px solid #979699;
+/*        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#d4d4d4',GradientType=0 );
+	cursor: pointer;
+        color: #da6950;
+        font-size: 22px;
+        font-weight: 700;
+        font-family: "Times New Roman", Georgia, Times, serif;*/
+}
+
+
+
 #accordion h3 b {
     color: #000000;
 }
