@@ -94,7 +94,7 @@
                     {*SWIPER BEGIN*}
                     
                     <!-- Slider main container -->
-                        <d{*iv class="swiper-container">
+                        {*<div class="swiper-container">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
