@@ -13,6 +13,7 @@
             <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
             <link href="css/style.css" type="text/css" rel="stylesheet"/>
             <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css" />
             <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
 
             <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
@@ -21,6 +22,7 @@
             <!--jquery-ui-->
             <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script src="js/jquery.bxslider.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
             <script src="js/main.js"></script>
     </head>
     <body>
@@ -89,6 +91,41 @@
                 <div class="sep"></div>
                 <div class="services">
                     <div class="title">Все наши услуги</div>
+                    {*SWIPER BEGIN*}
+                    
+                    <!-- Slider main container -->
+                        <d{*iv class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimg"><img src="" alt=""></div>
+                                        <h3>Заголовок 1</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint totam labore magni harum maxime iure optio. Atque, ipsa, suscipit, corporis tenetur magnam architecto perferendis ut non sint a obcaecati sed.</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                ...
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                            </div>
+                            <!- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>*}
+                    
+                    {*SWIPER END*}
+                    
+                    
                     <div class="service">
                         <div>
                             <div class="image"><img src="img/s1.png" alt="Услуга" /></div>

@@ -72,6 +72,20 @@ $(function () {
     $('.arr').click(function () {
         $('.bx-next').click();
     });
+    
+    
+    //initialize swiper when document ready  
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+    })  
 
 });
 
