@@ -272,7 +272,7 @@
                         <div class="review">
                             <div>
                                 <div class="image"><img src="img/voloshin-l.jpg" alt="Фото" />
-                                    <div class="name">Волошин Матвей Викторович,<br /> 37 лет</div>
+                                    <div class="name">Волошин Матвей Викторович,<br /> 37 лет.</div>
                                 </div>
                                 <div class="descr">
                                     <div class="ttl">Они небезразличны к простым людям, которые оказались в трудной жизненной ситуации.</div>

@@ -1,16 +1,16 @@
-<?php /* Smarty version 3.1.28-dev/63, created on 2015-11-23 15:46:02
+<?php /* Smarty version 3.1.28-dev/63, created on 2015-12-14 20:19:16
          compiled from "X:\home\adv.ru\public_html\templates\index.tpl" */ ?>
 <?php
 $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
   'version' => '3.1.28-dev/63',
-  'unifunc' => 'content_5652d24a2adbe6_03830221',
+  'unifunc' => 'content_566ec1d4d8e7d4_05583099',
   'file_dependency' => 
   array (
     'b6d03339cf7172c8a9b273d2f92faf5284a26431' => 
     array (
       0 => 'X:\\home\\adv.ru\\public_html\\templates\\index.tpl',
-      1 => 1448268360,
+      1 => 1450099148,
       2 => 'file',
     ),
   ),
@@ -18,8 +18,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
   ),
 ),false);
-if ($_valid && !is_callable('content_5652d24a2adbe6_03830221')) {
-function content_5652d24a2adbe6_03830221 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_566ec1d4d8e7d4_05583099')) {
+function content_566ec1d4d8e7d4_05583099 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -38,6 +38,7 @@ function content_5652d24a2adbe6_03830221 ($_smarty_tpl) {
             <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
             <link href="css/style.css" type="text/css" rel="stylesheet"/>
             <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css" />
             <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
 
             <?php echo '<script'; ?>
@@ -55,6 +56,9 @@ function content_5652d24a2adbe6_03830221 ($_smarty_tpl) {
 >
             <?php echo '<script'; ?>
  src="js/jquery.bxslider.min.js"><?php echo '</script'; ?>
+>
+            <?php echo '<script'; ?>
+ src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"><?php echo '</script'; ?>
 >
             <?php echo '<script'; ?>
  src="js/main.js"><?php echo '</script'; ?>
@@ -114,7 +118,8 @@ function content_5652d24a2adbe6_03830221 ($_smarty_tpl) {
                         <div class="button"><a href="#callback" class='fancy-form'>ОСТАВИТЬ ЗАЯВКУ</a></div>
                     </div>
                     <div class="clear"></div>
-                    <div class="title">10 самых частых вопросов адвокату</div>
+                    <div class="title"><a name="slide-2"><?php echo $_smarty_tpl->tpl_vars['arResult']->value['questions_title'];?>
+</a></div>
                 </div>
             </div>
             <div class="content">
@@ -138,8 +143,8 @@ $__foreach_name_0_saved_local_item = $_smarty_tpl->tpl_vars['foo'];
 :</b> <?php echo $_smarty_tpl->tpl_vars['foo']->value['question'];?>
 </h3>
                         <div>
-                            <p><?php echo $_smarty_tpl->tpl_vars['foo']->value['answer'];?>
-</p>
+                            <?php echo $_smarty_tpl->tpl_vars['foo']->value['answer'];?>
+
                         </div>
                     <?php
 $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_local_item;
@@ -152,71 +157,356 @@ if ($__foreach_name_0_saved_item) {
 $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
 }
 ?>
- 
                 </div>
                 <div class="sep"></div>
                 <div class="services">
                     <div class="title">Все наши услуги</div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s1.png" alt="Услуга" /></div>
-                            <div class="ttl">Раздел имущества</div>
+                    
+                    
+                    <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/rastorzhenie-braka.png" alt="pic">
+                                        </div>
+                                            <h4>Расторжение брака</h4>
+                                            <p>■ развод в суде<br/>
+                                               ■ развод с детьми<br/>
+                                               ■ развод без согласия<br/>
+                                               ■ развод и алименты<br/>
+                                               ■ развод без явки в суд<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Раздел имущества супругов</h4>
+                                           <p>■ раздел при разводе<br/>
+                                              ■ раздел в браке<br/>
+                                              ■ раздел квартиры<br/>
+                                              ■ раздел ипотеки<br/>
+                                              ■ раздел дома и участка<br/>
+                                              ■ раздел долгов<br/>
+                                              ■ брачный договор<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Споры о детях</h4>
+                                           <p>■ определение места жительства<br/>
+                                              ■ ребенка после развода<br/>
+                                              ■ устранение препятствий в общении с ребенком <br/>
+                                              ■ установление графика общения<br/>
+                                              ■ взыскание алиментов<br/>
+                                              ■ уменьшение алиментов<br/>
+                                              ■ исполнение решений по алиментам<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Выписка и выселение</h4>
+                                           <p>■ выписка без согласия<br/>
+                                              ■ выписка не проживающего<br/>
+                                              ■ выписка бывших членов семьи<br/>
+                                              ■ выписка из муниципального жилья<br/>
+                                              ■ выселение квартирантов<br/>
+                                              ■ выписка несовершеннолетних<br/>
+                                              ■ помощь в сохранении прописки и жильяp<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Жилищные споры</h4>
+                                           <p>■ споры по муниципальному жилью<br/>
+                                              ■ споры о собственности<br/>
+                                              ■ споры с членами семьи<br/>
+                                              ■ споры о приватизации<br/>
+                                              ■ споры о выселении и выписке<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Споры о собственности</h4>
+                                           <p>■ сохранение пристроек<br/>
+                                              ■ истребование своего имущества<br/>
+                                              ■ споры с соседями о нарушениях прав<br/>
+                                              ■ споры с регистрационными органами<br/>
+                                              ■ раздел долевой собственности<br/>
+                                              ■ выдел долей<br/>
+                                              ■ определение порядка пользования<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Защита по уголовным делам</h4>
+                                           <p>■ защита по делам о краже, ограблении<br/>
+                                              ■ защита по делам о мошенничестве<br/>
+                                              ■ защита застройщиков<br/>
+                                              ■ защита по делам о присвоении, растрате<br/>
+                                              ■ защита по делам о взяточничестве<br/>
+                                              ■ защита по делам о нанесении телесных повреждений<br/>
+                                              ■ защита по делам о причинении смерти<br/>
+                                            </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="cardimage">
+                                            <img src="img/usercart.png" alt="pic">
+                                        </div>
+                                        <h4>Помощь потерпевшим</h4>
+                                           <p>■ помощь на следствии<br/>
+                                              ■ помощь в суде<br/>
+                                              ■ подготовка гражданского иска<br/>
+                                              ■ возмещение ущерба<br/>
+                                              ■ компенсация морального вреда
+                                            </p>
+                                    </div>
+                                </div>
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Защита по уголовным делам</h4>
+                                      <p>■ защита по делам о краже, ограблении<br/>
+                                         ■ защита по делам о мошенничестве<br/>
+                                         ■ защита застройщиков<br/>
+                                         ■ защита по делам о присвоении, растрате<br/>
+                                         ■ защита по делам о взяточничестве<br/>
+                                         ■ защита по делам о нанесении телесных повреждений<br/>
+                                         ■ защита по делам о причинении смерти<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Споры с застройщиками</h4>
+                                      <p>■ при задержке строительства<br/>
+                                         ■ при просрочке передачи квартиры<br/>
+                                         ■ при банкротстве застройщика<br/>
+                                         ■ при уголовном преследовании застройщика<br/>
+                                         ■ признание права собственности на квартиру<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Потребительские споры</h4>
+                                      <p>■ защита прав при покупке<br/>
+                                         ■ защита прав при оказании услуг<br/>
+                                         ■ защита прав при страховании<br/>
+                                         ■ возмещение ущерба<br/>
+                                         ■ взыскание неустойки<br/>
+                                         ■ защита прав предпринимателей от злоупотреблений прав
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Трудовые споры</h4>
+                                      <p>■ взыскание зарплаты<br/>
+                                         ■ взыскание компенсаций при увольнении<br/>
+                                         ■ восстановление на работе<br/>
+                                         ■ помощь работнику при наложении взыскания<br/>
+                                         ■ помощь работнику при привлечении к материальной ответственности<br/>
+                                         ■ помощь работодателю
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/vziskanie-dolgov.png" alt="pic">
+                                   </div>
+                                   <h4>Взыскание долгов</h4>
+                                      <p>■ взыскание долга по расписке<br/>
+                                         ■ взыскание по договору займа <br/>
+                                         ■ расчет и взыскание процентов<br/>
+                                         ■ оспаривание долга в суде<br/>
+                                         ■ взыскание долга, если место жительства должника неизвестно<br/>
+                                         ■ взыскание долга, если дата возврата долга не указана<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Исковые заявления</h4>
+                                      <p>■ о взыскании ...<br/>
+                                         ■ о признании права ...<br/>
+                                         ■ о признании недействительным ...<br/>
+                                         ■ об истребовании имущества ...<br/>
+                                         ■ о расторжении договора ...<br/>
+                                         ■ об устранении препятствий ...<br/>
+                                         ■ о выделе ...<br/>
+                                         ■ о разделе ..<br/>
+                                         ■ другие<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Участие в суде</h4>
+                                      <p>■ подача иска в суд<br/>
+                                         ■ дача объяснений суду по иску<br/>
+                                         ■ заявление ходатайств<br/>
+                                         ■ наложение ареста на имущество<br/>
+                                         ■ представление доказательств<br/>
+                                         ■ оспаривание доказательств другой стороны<br/>
+                                         ■ проверка протоколов судебных заседаний<br/>
+                                         ■ состязание в прениях сторон<br/>
+                                         ■ получение решения суда<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/obzhalov.png" alt="Обжалование незаконных решений" title="Обжалование незаконных решений">
+                                   </div>
+                                   <h4>Обжалование незаконных решений</h4>
+                                      <p>■ подготовка апелляционных жалоб<br/>
+                                         ■ подготовка кассационных жалоб<br/>
+                                         ■ подготовка надзорных жалоб<br/>
+                                         ■ подготовка жалоб в Верховный суд<br/>
+                                         ■ подготовка жалоб Председателю ВС<br/>
+                                         ■ подготовка жалоб в надзорные органы<br/>
+                                         ■ участие в суде при обжаловании<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Защита по уголовным делам</h4>
+                                      <p>■ защита по делам о краже, ограблении<br/>
+                                         ■ защита по делам о мошенничестве<br/>
+                                         ■ защита застройщиков<br/>
+                                         ■ защита по делам о присвоении, растрате<br/>
+                                         ■ защита по делам о взяточничестве<br/>
+                                         ■ защита по делам о нанесении телесных повреждений<br/>
+                                         ■ защита по делам о причинении смерти<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/osparivanie.png" alt="pic">
+                                   </div>
+                                   <h4>Оспаривание договоров и завещаний</h4>
+                                      <p>■ расторжение договоров через суд<br/>
+                                         ■ признание договоров недействительными<br/>
+                                         ■ изменение договоров через суд<br/>
+                                         ■ споры по исполнению договоров
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Защита по уголовным делам</h4>
+                                      <p>■ защита по делам о краже, ограблении<br/>
+                                         ■ защита по делам о мошенничестве<br/>
+                                         ■ защита застройщиков<br/>
+                                         ■ защита по делам о присвоении, растрате<br/>
+                                         ■ защита по делам о взяточничестве<br/>
+                                         ■ защита по делам о нанесении телесных повреждений<br/>
+                                         ■ защита по делам о причинении смерти<br/>
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Земельные споры</h4>
+                                      <p>■ споры по меже<br/>
+                                         ■ споры о праве собственности на землю<br/>
+                                         ■ споры с госорганами по земле<br/>
+                                         ■ споры об устранении препятствий
+                                       </p>
+                               </div>
+                           </div>                           
+                            <div class="swiper-slide">
+                               <div class="card">
+                                   <div class="cardimage">
+                                       <img src="img/usercart.png" alt="pic">
+                                   </div>
+                                   <h4>Наследственные споры</h4>
+                                      <p>■ принятие наследства через суд<br/>
+                                         ■ восстановление срока<br/>
+                                         ■ установление факта родственных отношений<br/>
+                                         ■ оспаривание завещания<br/>
+                                         ■ признание наследника недостойным<br/>
+                                         ■ споры между наследниками<br/>
+                                         ■ споры по составу наследства<br/>
+                                       </p>
+                               </div>
+                           </div> 
                         </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s2.png" alt="Услуга" /></div>
-                            <div class="ttl">Споры о детях</div>
+                            <!- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s3.png" alt="Услуга" /></div>
-                            <div class="ttl">Наследственные споры</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s4.png" alt="Услуга" /></div>
-                            <div class="ttl">Жилищные споры</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s5.png" alt="Услуга" /></div>
-                            <div class="ttl">Споры о
-                                собственности</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s6.png" alt="Услуга" /></div>
-                            <div class="ttl">Земельные споры</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s7.png" alt="Услуга" /></div>
-                            <div class="ttl">Споры с 
-                                застройщиками</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s8.png" alt="Услуга" /></div>
-                            <div class="ttl">Арбитраж</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div>
-                            <div class="image"><img src="img/s9.png" alt="Услуга" /></div>
-                            <div class="ttl">Уголовные дела</div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
+                    
+                    
+                    
+                    
+                    
                     <div class="sep"></div>
                     <div class="prof">
-                        <div class="ttl">Больше чем профессия</div>
+                        <div class="ttl"><a name="slide-1">Больше чем профессия</a></div>
                         <div class="image"><img src="img/photo1.png" alt="Фото" /></div>
                         <div class="punkt">Желание помогать людям в поиске решения из самых сложных ситуаций зародилось во мне благодаря семейным ценностям и традициям. Мой отец Епифанов В.П. более 22 лет занимался адвокатской деятельностью, за что в 2007 году награжден медалью «За заслуги». Мама Епифанова О.В., как нотариус, на протяжении последних 20 лет помогает гражданам реализовать свои наследственные права. Брат Епифанов Константин сегодня успешный налоговый адвокат.</div>
                         <div class="punkt">С моего первого рабочего дня в качестве адвоката прошло более 11 лет, но я и сегодня с искренним интересом отношусь к каждому делу и ищу нестандартные пути решения наболевших вопросов своих доверителей. </div>
@@ -224,7 +514,7 @@ $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
                     </div>
                     <div class="sep"></div>
                     <div class="peoples">
-                        <div class="title">Наши сотрудники</div>
+                        <div class="title"><a name="slide-4">Наши сотрудники</a></div>
                         <div class="people">
                             <div class="image"><img src="img/photo2.jpg" alt="Фото" /></div>
                             <div class="descr">
@@ -264,21 +554,21 @@ $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
                     </div>
                     <div class="sep"></div>
                     <div class="reviews">
-                        <div class="title">Отзывы наших клиентов</div>
+                        <div class="title"><a name="slide-3">Отзывы наших клиентов</a></div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r1.jpg" alt="Фото" />
-                                    <div class="name">Стороженко <br />33 года</div>
+                                <div class="image"><img src="img/stor-l.jpg" alt="Фото" />
+                                    <div class="name">Стороженко Ольга<br />33 года</div>
                                 </div>
                                 <div class="descr">
                                     <div class="ttl">Спасибо адвокату, что помогла отсудить квартиру и выселить мошенников.</div>
-                                    <div class="text">Хочу сказать огромное спасибо адвокату Епифановой М.В., что помогла нашей семье отсудить квартиру отца и выселить из нее мошенников. Мы могли просто остаться на улице! Желаем процветания и плодотворной работы.<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;Желаем процветания и плодотворной работы.</div>
+                                    <div class="text">Хочу сказать огромное спасибо адвокату Епифановой М.В., что помогла нашей семье отсудить квартиру отца и выселить из нее мошенников. Мы могли просто остаться на улице!<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;Желаем процветания и плодотворной работы.</div>
                                 </div>
                             </div>
                         </div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r2.jpg" alt="Фото" />
+                                <div class="image"><img src="img/kosh-l.jpg" alt="Фото" />
                                     <div class="name">Кошевец Наталья Ивановна<br />47 лет</div>
                                 </div>
                                 <div class="descr">
@@ -290,7 +580,7 @@ $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
                         </div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r3.jpg" alt="Фото" />
+                                <div class="image"><img src="img/knazeva-l.jpg" alt="Фото" />
                                     <div class="name">Людмила Князева<br /> 34 года</div>
                                 </div>
                                 <div class="descr">
@@ -302,12 +592,12 @@ $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
                         </div>
                         <div class="review">
                             <div>
-                                <div class="image"><img src="img/r4.jpg" alt="Фото" />
+                                <div class="image"><img src="img/voloshin-l.jpg" alt="Фото" />
                                     <div class="name">Волошин Матвей Викторович,<br /> 37 лет</div>
                                 </div>
                                 <div class="descr">
-                                    <div class="ttl">Помогли отстоять свои права в суде при разделе имущества с женой</div>
-                                    <div class="text">Очень благодарен адвокату Епифановой М.В. и ее помощнику Колесниковой Елене за поддержку в суде при разделе имущества. Думал справлюсь сам, но эмоции от несправедливости  перехлестывали через край.<br />&nbsp;&nbsp;&nbsp;&nbsp;Спасибо, что не отступили и добились честного раздела имущества!<br />
+                                    <div class="ttl">Они небезразличны к простым людям, которые оказались в трудной жизненной ситуации.</div>
+                                    <div class="text">Я обратился за оказанием услуг к специалистам адвокатского кабинета Епифановой и удивился, насколько быстро и профессионально были подготовлены обосновывающие документы. Я высоко оцениваю труд и преданность этих адвокатов своей профессии, они небезразличны к простым людям, которые оказались в трудной жизненной ситуации. Хотелось бы отметить оперативное реагирование на все возникающие в процессе работы нюансы. Особо отмечаю живое человеческое участие и заинтересованность в достижении результата. Мой вопрос был разрешен положительно, и я выражаю искреннюю благодарность за то, что среди многочисленных юристов и адвокатов есть такие такие профессионалы, преданные своему делу.<br />
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +672,7 @@ $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
                                 <input  type="text" name="name" placeholder="имя"/> <span style="top:151px; left:426px;">Введите ваше имя</span>
                                 <input type="text" name="phone" class="phone" placeholder="телефон"/><span style="top:224px; left:426px;">Введите ваш номер телефона</span>
                             </form>
-                            <a href="#" class="callbutton call-back-phone-2 phone-btn">
+                            <a href="#" class="callbutton call-back-phone-2 phone-btn" onclick="metrika='meet_up';">
                                 <P>Заказать звонок</P>
                             </a> 
                         </div>
@@ -394,6 +684,37 @@ $_smarty_tpl->tpl_vars['foo'] = $__foreach_name_0_saved_item;
 >
                     </div>
                 </div>
+				<!-- Yandex.Metrika counter -->
+				<?php echo '<script'; ?>
+ type="text/javascript">
+					(function (d, w, c) {
+						(w[c] = w[c] || []).push(function() {
+							try {
+								w.yaCounter31269228 = new Ya.Metrika({
+									id:31269228,
+									clickmap:true,
+									trackLinks:true,
+									accurateTrackBounce:true,
+									webvisor:true
+								});
+							} catch(e) { }
+						});
+
+						var n = d.getElementsByTagName("script")[0],
+							s = d.createElement("script"),
+							f = function () { n.parentNode.insertBefore(s, n); };
+						s.type = "text/javascript";
+						s.async = true;
+						s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+						if (w.opera == "[object Opera]") {
+							d.addEventListener("DOMContentLoaded", f, false);
+						} else { f(); }
+					})(document, window, "yandex_metrika_callbacks");
+				<?php echo '</script'; ?>
+>
+				<noscript><div><img src="https://mc.yandex.ru/watch/31269228" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+				<!-- /Yandex.Metrika counter -->
                 </body>
                 </html><?php }
 }
